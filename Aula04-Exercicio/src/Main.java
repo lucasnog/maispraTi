@@ -1,21 +1,24 @@
 
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("Exercicio 1 - If-else");
 
+        int numero = 0;
 
-        int numero = -1;
-
-        if (numero < 1) {
-            System.out.println("O numero "+ numero +" é negativo");
+        if (numero == 0) {
+            System.out.println("O número é 0.");
         } else {
-            System.out.println("O numero " + numero + "é positivo");
+            if(numero < 1){
+                System.out.println("O número " + numero + " é negativo");
+            }else{
+            System.out.println("O número " + numero + " é positivo");
+        }
         }
 
+
         System.out.println("----------------------------");
-        System.out.println("Exercicio 2 - switch-case");
-
-
+        System.out.println("Exercicio 2 - Switch-case");
 
         int opcao = 3;
 
@@ -33,10 +36,9 @@ public class Main {
                 break;
         }
 
+
         System.out.println("----------------------------");
         System.out.println("Exercicio 3 - While");
-
-
 
         int decrescente = 10;
 
@@ -44,6 +46,7 @@ public class Main {
             System.out.println(decrescente);
             decrescente--;
         }
+
 
         System.out.println("----------------------------");
         System.out.println("Exercicio 4 - Do-while");
