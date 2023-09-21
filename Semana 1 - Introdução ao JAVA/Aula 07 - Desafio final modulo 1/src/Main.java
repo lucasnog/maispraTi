@@ -53,10 +53,10 @@ public class Main {
             System.out.println("Parabéns!");
         } else {
             if (difIdealMin > 0) {
-                System.out.println("Para atingir o peso ideal, considerando sua altura, é necessário emagrecer: " + difIdealMax + " quilogramas.");
+                System.out.println("Para atingir o peso ideal, considerando sua altura, é necessário emagrecer " + difIdealMax + " quilogramas.");
 
             } else {
-                System.out.println("Para atingir o peso ideal, considerando sua altura, é necessário engordar: " + difIdealMin*(-1) + " quilogramas.");
+                System.out.println("Para atingir o peso ideal, considerando sua altura, é necessário engordar " + difIdealMin*(-1) + " quilogramas.");
             }
         }
     }
