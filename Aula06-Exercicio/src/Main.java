@@ -4,20 +4,25 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Boolean continuar = true;
-        String resposta = "sim";
+        String resposta ="1";
 
 
         do {
 
-            if(resposta.equals("sim")){
+            if(resposta.equals("1")){
             System.out.println("Digite o primeiro numero.");
-            Integer n1 = sc.nextInt();
+            Double n1 = sc.nextDouble();
 
             System.out.println("Digite o segundo numero.");
-            Integer n2 = sc.nextInt();
+            Double n2 = sc.nextDouble();
 
 
-            System.out.println("Digite o numero da operação desejada. (1 - soma, 2 - subtração,  3 - multiplicação ou  4 - divisão)");
+            System.out.println("Digite o numero da operação desejada:");
+                System.out.println("1 - Soma");
+                System.out.println("2 - Subtração");
+                System.out.println("3 - Multiplicação");
+                System.out.println("4 - Divisão");
+
             Integer operacao = sc.nextInt();
 
             switch (operacao) {
@@ -38,13 +43,15 @@ public class Main {
             }
         }
 
-            System.out.println("Deseja continuar? (sim/não)");
+            System.out.println("Deseja continuar?");
+            System.out.println("1 - Sim");
+            System.out.println("2 - Não");
             resposta = sc.next();
 
-            if (resposta.equals("não")) {
+            if (resposta.equals("2")) {
                 continuar = false;
                 System.out.println("Certo! Até mais.");
-            } else if (resposta.equals("sim")) {
+            } else if (resposta.equals("1")) {
             }else{
                 System.out.println("Resposta invalida.");
             }
