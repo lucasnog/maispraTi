@@ -5,6 +5,7 @@ public class Aluno {
 
     public void faltou(){
         qtdFaltas++;
+        System.out.println("O aluno " + nome + " faltou");
     }
 
 
