@@ -1,32 +1,32 @@
 public class BankAcc {
 
     private Integer accNumber;
-    private Integer holder;
-    private Integer balance = 0;
-    public Integer amountD;
-    public Integer amountW;
+    private String holder;
+    private double balance = 0;
+    public double amountD;
+    public double amountW;
 
 
     public Integer getAccNumber() {
         return accNumber;
     }
 
-    public Integer getholder() {
+    public String getholder() {
         return holder;
     }
 
-    public Integer getBalance() {
+    public double getBalance() {
         return balance;
 
     }
 
-    public void deposit (Integer amountD){
+    public void deposit (double amountD){
 
         balance += amountD;
         System.out.println(amountD + " Reais depositado com sucesso");
         System.out.println("O novo saldo é: " + this.getBalance() + " reais");
     }
-    public void withdraw (Integer amountW){
+    public void withdraw (double amountW){
         if(amountW > balance) {
             System.out.println("Saldo insuficiente.");
         }else {

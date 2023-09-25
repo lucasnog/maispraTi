@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Integer op;
+        int op;
         boolean aux = true;
         Scanner sc = new Scanner(System.in);
         BankAcc acc1 = new BankAcc();
@@ -23,12 +23,12 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("Digite o valor que deseja depositar.");
-                    acc1.amountD = sc.nextInt();
+                    acc1.amountD = sc.nextDouble();
                     acc1.deposit(acc1.amountD);
                     break;
                 case 3:
                     System.out.println("Digite o valor que deseja retirar.");
-                    acc1.amountW = sc.nextInt();
+                    acc1.amountW = sc.nextDouble();
                     acc1.withdraw(acc1.amountW);
                     break;
                 case 4:
