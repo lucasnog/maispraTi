@@ -5,8 +5,7 @@ public class Main {
         int op;
         boolean aux = true;
         Scanner sc = new Scanner(System.in);
-        BankAcc acc1 = new BankAcc();
-
+        BankAcc acc1 = new BankAcc(202156,"lucas", 2000);
 
         do {
             System.out.println("Digite o numero da operação desejada:");

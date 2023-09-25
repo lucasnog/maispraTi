@@ -2,10 +2,20 @@ public class BankAcc {
 
     private Integer accNumber;
     private String holder;
-    private double balance = 0;
+    private double balance;
     public double amountD;
     public double amountW;
 
+
+    public BankAcc (Integer accNumber, String holder, double balance){
+        this.accNumber = accNumber;
+        this.holder = holder;
+        this.balance = balance;
+    };
+
+    public BankAcc (){
+
+    };
 
     public Integer getAccNumber() {
         return accNumber;
