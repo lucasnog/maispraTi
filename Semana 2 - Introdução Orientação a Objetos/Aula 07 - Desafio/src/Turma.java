@@ -23,7 +23,7 @@ public class Turma {
 
     public void addAluno(Aluno aluno){
         System.out.println("------------------------------");
-        System.out.println("Tentando cadastraro o aluno: " + aluno.getNome() + " na turma " + this.id + "...");
+        System.out.println("Tentando cadastrar o aluno: " + aluno.getNome() + " na turma " + this.id + "...");
 
                 if(aluno01 == null){
                     aluno01 = aluno;
