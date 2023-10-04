@@ -1,0 +1,23 @@
+Aula 02 - Exercicio (mod3)
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Tue Oct 3 17:45:18 2023 -0300
+#
+# On branch main
+# Your branch is ahead of 'origin/main' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	new file:   "Semana 3 - Programa\303\247\303\243o Orientada a Objetos - Avan\303\247ado/Aula 02 - Exercicio/.gitignore"
+#	new file:   "Semana 3 - Programa\303\247\303\243o Orientada a Objetos - Avan\303\247ado/Aula 02 - Exercicio/.idea/.gitignore"
+#	new file:   "Semana 3 - Programa\303\247\303\243o Orientada a Objetos - Avan\303\247ado/Aula 02 - Exercicio/.idea/misc.xml"
+#	new file:   "Semana 3 - Programa\303\247\303\243o Orientada a Objetos - Avan\303\247ado/Aula 02 - Exercicio/.idea/modules.xml"
+#	new file:   "Semana 3 - Programa\303\247\303\243o Orientada a Objetos - Avan\303\247ado/Aula 02 - Exercicio/.idea/vcs.xml"
+#	new file:   "Semana 3 - Programa\303\247\303\243o Orientada a Objetos - Avan\303\247ado/Aula 02 - Exercicio/Aula 02 - Exercicio.iml"
+#	new file:   "Semana 3 - Programa\303\247\303\243o Orientada a Objetos - Avan\303\247ado/Aula 02 - Exercicio/src/Animal.java"
+#	new file:   "Semana 3 - Programa\303\247\303\243o Orientada a Objetos - Avan\303\247ado/Aula 02 - Exercicio/src/Cachorro.java"
+#	new file:   "Semana 3 - Programa\303\247\303\243o Orientada a Objetos - Avan\303\247ado/Aula 02 - Exercicio/src/Gato.java"
+#	new file:   "Semana 3 - Programa\303\247\303\243o Orientada a Objetos - Avan\303\247ado/Aula 02 - Exercicio/src/Main.java"
+#
