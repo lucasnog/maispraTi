@@ -5,6 +5,4 @@ abstract class Forma implements Desenho {
         this.cor = cor;
     }
 
-    @Override
-    public abstract void desenhar();
 }
