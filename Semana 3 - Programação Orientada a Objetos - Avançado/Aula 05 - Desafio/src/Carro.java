@@ -37,16 +37,16 @@ public class Carro extends Veiculo implements Promocao {
 
     @Override
     public void aplicarDesconto(double valor) {
+        System.out.println("------------------------------");
         System.out.println("Tentando dar desconto de " + valor + " para o carro de placa: " + this.placa);
         if (valor > (this.preco*0.1)){
             System.out.println("O valor excede o maximo de 10% permitido para desconto.");
             System.out.println("O valor maximo de desconto permitido para esse carro é: " +this.preco*0.1);
-            System.out.println("------------------------------");
         }else{
             System.out.println("Desconto aplicado com sucesso.");
             this.preco -= valor;
             System.out.println("O novo preço do carro é: " + this.preco);
-            System.out.println("------------------------------");
+
 
         }
 

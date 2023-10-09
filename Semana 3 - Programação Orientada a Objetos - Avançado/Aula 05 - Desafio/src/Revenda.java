@@ -37,24 +37,24 @@ public class Revenda {
         System.out.println("------------------------------");
        if(placa == veiculo1.placa ){
            veiculo1 = null;
-           System.out.println("Veiculo de placa:" + placa + " foi removido da revenda com sucesso.");
+           System.out.println("Veiculo de placa: " + placa + " foi removido da revenda com sucesso.");
        }else {
            if (placa == veiculo2.placa) {
                veiculo2 = null;
-               System.out.println("Veiculo de placa:" + placa + " foi removido da revenda com sucesso.");
+               System.out.println("Veiculo de placa: " + placa + " foi removido da revenda com sucesso.");
            } else {
                if (placa == veiculo3.placa) {
                    veiculo3 = null;
-                   System.out.println("Veiculo de placa:" + placa + " foi removido da revenda com sucesso.");
+                   System.out.println("Veiculo de placa: " + placa + " foi removido da revenda com sucesso.");
                } else {
                    if (placa == veiculo4.placa) {
                        veiculo4 = null;
-                       System.out.println("Veiculo de placa:" + placa + " foi removido da revenda com sucesso.");
+                       System.out.println("Veiculo de placa: " + placa + " foi removido da revenda com sucesso.");
 
                    } else {
                        if (placa == veiculo5.placa) {
                            veiculo5 = null;
-                           System.out.println("Veiculo de placa:" + placa + " foi removido da revenda com sucesso.");
+                           System.out.println("Veiculo de placa: " + placa + " foi removido da revenda com sucesso.");
                        } else {
                            System.out.println("O carro de placa " + placa + " não foi encontrado na revenda.");
                        }
@@ -64,18 +64,18 @@ public class Revenda {
        }
     };
     public void listarVeiculos(){
-
         System.out.println("------------------------------");
+        System.out.println("VEICULOS DA REVENDA:");
+        System.out.println("-----------------");
         System.out.println("Veiculo 01: " + veiculo1);
-        System.out.println("------------------------------");
+        System.out.println("-----------------");
         System.out.println("Veiculo 02: " + veiculo2);
-        System.out.println("------------------------------");
+        System.out.println("-----------------");
         System.out.println("Veiculo 03: " + veiculo3);
-        System.out.println("------------------------------");
+        System.out.println("-----------------");
         System.out.println("Veiculo 04: " + veiculo4);
-        System.out.println("------------------------------");
+        System.out.println("-----------------");
         System.out.println("Veiculo 05: " + veiculo5);
-        System.out.println("------------------------------");
     }
 
     public void addDesconto(String placa, double valorDesconto) {
