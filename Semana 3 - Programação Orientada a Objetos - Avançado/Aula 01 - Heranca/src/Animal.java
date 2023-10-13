@@ -6,7 +6,15 @@ public class Animal {
         this.nome = nome;
     }
 
-    public void comunicar(){
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void comunicar() {
         System.out.println("O animal está emitindo um som.");
     }
 }
