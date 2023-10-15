@@ -1,12 +1,33 @@
-public class App {
+import java.util.Scanner;
 
+public class App {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String jogador = "X";
+        int jogadas = 0;
+        boolean continuar = true;
         JogoDaVelha jogo1 = new JogoDaVelha();
 
-        jogo1.telaAtual();
-        jogo1.setTabuleiro(0, 0, "X");
-        jogo1.setTabuleiro(1, 1, "O");
-        System.out.println("---");
-        jogo1.telaAtual();
+        do {
+            jogo1.telaAtual();
+            System.out.println("Agora é a vez do " + jogador + " qual posição deseja marcar?");
+            int entrada = sc.nextInt();
+
+            if (jogo1.setTabuleiro(entrada, jogador)) {
+                jogadas++;
+                if (jogo1.checkGanhador()) {
+                    System.out.println("O jogador " + jogador + " ganhou!");
+                    break;
+                }
+
+                jogador = (jogador.equals("X")) ? "O" : "X";
+            }
+
+            if (jogadas == 9) {
+                System.out.println("Deu velha!!");
+                continuar = false;
+            }
+        } while (continuar);
+
     }
 }
