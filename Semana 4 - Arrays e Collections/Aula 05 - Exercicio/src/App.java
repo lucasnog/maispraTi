@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Curso curso = new Curso("Curso da Nasa");
+        Curso curso = new Curso("+praTi", "Marlon");
 
         curso.addDiscplina("Geometria Analitica");
         curso.addDiscplina("Calculo Numérico");

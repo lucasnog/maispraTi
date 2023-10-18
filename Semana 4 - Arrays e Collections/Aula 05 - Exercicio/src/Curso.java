@@ -6,7 +6,8 @@ import java.util.Map;
 public class Curso {
     @Override
     public String toString() {
-        return "-----------\n" + nome + "\nDisciplinas:" + disciplinas + ", Alunos:" + aluno + "\n-----------";
+        return "-----------\nCurso '" + nome + "' -> Professor: " + professor + "\nDisciplinas:" + disciplinas
+                + ", Alunos:" + aluno + "\n-----------";
     }
 
     private String nome;
@@ -14,8 +15,9 @@ public class Curso {
     private List<String> disciplinas = new ArrayList<>();
     private Map<Integer, String> aluno = new HashMap<>();
 
-    public Curso(String nome) {
+    public Curso(String nome, String professor) {
         this.nome = nome;
+        this.professor = professor;
     }
 
     public void addDiscplina(String nome) {
