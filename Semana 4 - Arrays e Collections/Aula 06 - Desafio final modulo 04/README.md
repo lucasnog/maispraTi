@@ -1,18 +1,33 @@
-## Getting Started
+## DESAFIO FINAL DO MÓDULO
+Com base em todo conteúdo visto nas aulas anteriores, você precisará desenvolver um...
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Sistema de Gerenciamento de Biblioteca
+Neste desafio, seu foco principal é gerenciar uma lista de livros e suas categorias usando as estruturas de Collections.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+#### Vamos ao desafio:
+1. Crie uma classe **Livro** com os seguintes
+**atributos**
+    * título (String).
+    * autor (String).
+    * categoria (String).
+**métodos** 
+    * Construtor com todos os parâmetros.
+    * Métodos getters e setters.
+    * Método 'exibirDetalhes()' que retorna uma String.
+2. Crie uma classe **Biblioteca**:
+**atributos**
+    * acervo (List< Livro>).
+    * categorias (Set< String>).
+**métodos** 
+    * **adicionarLivro(Livro livro)**: para adicionar um livro na lista e sua categoria no conjunto.
+    * **removerLivro(Livro livro)**: para remover um livro.
+    * **listLivros(Livro livro)**: para listar todos os livros.
+    * **listarCategorias()**: para listar todas as categorias de livros distintas.
+    * **buscarPorCategoria(String categoria)**: para listar todos os livros de uma categoria 
+6. Na classe Principal:
+    * Instancie livros.
+    * Crie uma instância da biblioteca.
+    * Adicione os livros à biblioteca.
+    * Liste todos os livros.
+    * Liste todas as categorias.
+    * Busque livros de uma categoria específica.
