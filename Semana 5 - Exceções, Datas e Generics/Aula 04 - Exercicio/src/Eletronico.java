@@ -14,6 +14,8 @@ public class Eletronico implements Loja<String> {
 
     @Override
     public void addItem(String item) {
+        System.out.println("----");
+        System.out.println("Item " + item + " adicionado com sucesso.");
         itensDaLoja.add(item);
     }
 
