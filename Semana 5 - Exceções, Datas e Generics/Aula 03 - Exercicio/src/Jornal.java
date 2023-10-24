@@ -23,10 +23,12 @@ public class Jornal {
 
     public static List<Artigo> buscarPorData(String de, String ate) {
         List<Artigo> artigosNoIntervalo = new ArrayList<>();
+        LocalDate dataDe = LocalDate.parse(de, formatador);
+        LocalDate dataAte = LocalDate.parse(ate, formatador);
         for (Artigo artigo : listaDeArtigos) {
             LocalDate dataArtigo = artigo.getDataPublicacao();
-            if (dataArtigo.isAfter(LocalDate.parse(de, formatador))
-                    && dataArtigo.isBefore(LocalDate.parse(ate, formatador))) {
+            if (dataArtigo.isAfter(dataDe)
+                    && dataArtigo.isBefore(dataAte)) {
                 artigosNoIntervalo.add(artigo);
             }
         }
