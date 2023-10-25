@@ -13,7 +13,11 @@ public class Reserva {
         LocalDate dataEntradaLocal = LocalDate.parse(dataEntrada, formatData);
         LocalDate dataSaidaLocal = LocalDate.parse(dataSaida, formatData);
 
-        //essa parte eu olhei no chatgpt kkk
+        //                                                 |
+        //       ------------------------------            |
+        // **** essa parte eu olhei no chatgpt kkk *****  \ /
+        //       ------------------------------            v
+
         long dias = ChronoUnit.DAYS.between(dataEntradaLocal, dataEntradaLocal);
 
         return (int) (dias + 1);
