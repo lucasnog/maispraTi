@@ -1,6 +1,7 @@
-package repository;
+package br.com.lucasnog.biblioteca.service.repository;
 
-import model.Livro;
+import br.com.lucasnog.biblioteca.model.Livro;
+import br.com.lucasnog.biblioteca.service.ILivroRepository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LivroRepository implements Crud<Livro>{
+public class LivroRepository implements ILivroRepository<Livro> {
 
     private Connection conn;
 
@@ -44,10 +45,12 @@ public class LivroRepository implements Crud<Livro>{
 
         try (
                 PreparedStatement pstmt = this.conn.prepareStatement(sql)) {
+
             pstmt.setString(1, livro.getTitulo());
             pstmt.setString(2, livro.getAutor());
             pstmt.setInt(3, livro.getAnoPub());
             pstmt.setString(4, livro.getStatus());
+            pstmt.setInt(5, livro.getId());
 
             int resultado = pstmt.executeUpdate();
             if (resultado > 0) {
@@ -91,6 +94,7 @@ public class LivroRepository implements Crud<Livro>{
 
         try (
                 PreparedStatement pstmt = this.conn.prepareStatement(sql)) {
+
             ResultSet rs = pstmt.executeQuery();
 
             while (rs.next()) {
@@ -114,7 +118,7 @@ public class LivroRepository implements Crud<Livro>{
 
     @Override
     public Livro readById(int id) {
-        String sql = "SELECT * FROM curso WHERE id = " + id;
+        String sql = "SELECT * FROM livro WHERE id = " + id;
         this.conn = Biblioteca.getConexao();
 
         try (
@@ -137,6 +141,35 @@ public class LivroRepository implements Crud<Livro>{
         }
 
         return null;
+    }
+
+    public List<Livro> readByStatus(String status) {
+        String sql = "SELECT * FROM livro WHERE status = ?";
+        this.conn = Biblioteca.getConexao();
+        List<Livro> livros = new ArrayList<>();
+
+        try (
+                PreparedStatement pstmt = this.conn.prepareStatement(sql)) {
+            pstmt.setString(1, status);
+
+            ResultSet rs = pstmt.executeQuery();
+            while (rs.next()) {
+                Livro livro = new Livro();
+                livro.setId(rs.getInt("id"));
+                livro.setTitulo(rs.getString("titulo"));
+                livro.setAutor(rs.getString("autor"));
+                livro.setAnoPub(rs.getInt("anoPub"));
+                livro.setStatus(rs.getString("status"));
+                livros.add(livro);
+
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            Biblioteca.fechaConexao(this.conn);
+        }
+
+        return livros;
     }
 }
 

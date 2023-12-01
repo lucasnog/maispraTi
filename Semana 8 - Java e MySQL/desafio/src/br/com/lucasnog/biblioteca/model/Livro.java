@@ -1,4 +1,4 @@
-package model;
+package br.com.lucasnog.biblioteca.model;
 
 public class Livro {
     private int id;
@@ -19,11 +19,14 @@ public class Livro {
                 '}';
     }
 
-    public Livro(String titulo, String autor, int anoPub, String status) {
+    public Livro(String titulo, String autor, int anoPub) {
         this.titulo = titulo;
         this.autor = autor;
         this.anoPub = anoPub;
-        this.status = status;
+        this.status = "Disponivel";
+    }
+
+    public Livro() {
     }
 
     public int getId() {

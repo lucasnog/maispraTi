@@ -1,4 +1,4 @@
-package repository;
+package br.com.lucasnog.biblioteca.service.repository;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,19 +16,20 @@ public class Biblioteca {
 
         try {
             connection = DriverManager.getConnection(URL, USUARIO, SENHA);
-        }catch(SQLException e) {
+        } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
 
         return connection;
     }
-    public  static  void fechaConexao(Connection conexao){
+
+    public static void fechaConexao(Connection conexao) {
 
         try {
             conexao.close();
             conexao = null;
 
-        }catch (SQLException e){
+        } catch (SQLException e) {
             System.out.println((e.getMessage()));
         }
 

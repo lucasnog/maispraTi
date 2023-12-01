@@ -1,7 +1,8 @@
 package model;
 public class Aluno{
     private int id;
-
+    private String nome;
+    private int idade;
     public int getId() {
         return id;
     }
@@ -35,6 +36,5 @@ public class Aluno{
         this.idade = idade;
     }
 
-    private String nome;
-    private int idade;
+
 }

@@ -32,6 +32,8 @@ public class Main {
         List<Aluno> todosAlunos = alunoRepo.readAll();
         todosAlunos.forEach(System.out::println);
 
+        alunoRepo.readAll();
+
 
 
     }
