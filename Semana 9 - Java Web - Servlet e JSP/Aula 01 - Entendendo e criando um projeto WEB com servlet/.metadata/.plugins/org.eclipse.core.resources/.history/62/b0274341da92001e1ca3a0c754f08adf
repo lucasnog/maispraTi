@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Aula01- Entendendo e criando um projeto WEB com servlet">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <property name="context-root" value="Aula01-_Entendendo_e_criando_um_projeto_WEB_com_servlet"/>
+        <property name="java-output-path" value="/Aula01- Entendendo e criando um projeto WEB com servlet/build/classes"/>
+    </wb-module>
+</project-modules>
