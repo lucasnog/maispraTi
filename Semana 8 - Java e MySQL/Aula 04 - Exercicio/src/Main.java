@@ -11,10 +11,10 @@ public class Main {
     public static void main(String[] args) {
 
         CursoRepository cursoRepository = new CursoRepository();
+        Curso curso = new Curso("Teste","Teste");
+        curso.g
+        cursoRepository.create(curso);
 
-        Curso cursoAtualizado = new Curso("Marlon", "Java");
 
-        cursoRepository.update(cursoAtualizado);
-        cursoRepository.delete(1);
     }
 }
