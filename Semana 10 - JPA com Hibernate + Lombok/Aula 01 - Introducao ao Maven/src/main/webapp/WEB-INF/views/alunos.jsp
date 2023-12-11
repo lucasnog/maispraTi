@@ -33,8 +33,8 @@
                         out.println("<th scope='row'>" + aluno.getId() + "</th>");
                         out.println("<td>" + aluno.getNome() + "</td>");
                         out.println("<td>" + aluno.getIdade() + "</td>");
-                        out.println("<td> <a href='/ProjetoEscola/editarAluno?id=" + aluno.getId() + "'><i class='fa-solid fa-pen'></i></a> </td>");
-                        out.println("<td> <a href='/ProjetoEscola/excluirAluno?id=" + aluno.getId() + "'><i class='fa-solid fa-trash'></i></a> </td>");
+                        out.println("<td> <a href='/ProjetoMaven/editarAluno?id=" + aluno.getId() + "'><i class='fa-solid fa-pen'></i></a> </td>");
+                        out.println("<td> <a href='/ProjetoMaven/excluirAluno?id=" + aluno.getId() + "'><i class='fa-solid fa-trash'></i></a> </td>");
                         out.println("</tr>");
                     }
                 %>
