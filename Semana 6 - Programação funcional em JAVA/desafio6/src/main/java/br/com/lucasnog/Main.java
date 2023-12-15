@@ -37,11 +37,11 @@ public class Main {
 
 
 
-        user.filtrarPorCategoria(analise.filtrarPorCategoria(listaDados, "Carros"));
-        user.somaPorCategoria(analise.somaPorCategoria(listaDados, "Vestuario"));
-        user.encontrarValorMaximoLista(analise.encontrarValorMaximoLista(listaDados));
-        user.ordenarPorData(analise.ordenarPorData(listaDados));
-        user.ordenarPorValor(analise.ordenarPorValor(listaDados));
+        user.mostrarDadosFiltradosPorCategoria(analise.filtrarPorCategoria(listaDados, "Carros"));
+        user.mostrarSomaPorCategoria(analise.somaPorCategoria(listaDados, "Vestuario"));
+        user.mostrarValorMaximo(analise.encontrarValorMaximoLista(listaDados));
+        user.mostrarDadosOrdenadosPorData(analise.ordenarPorData(listaDados));
+        user.mostrarDadosOrdenadosPorValor(analise.ordenarPorValor(listaDados));
 
 
     }

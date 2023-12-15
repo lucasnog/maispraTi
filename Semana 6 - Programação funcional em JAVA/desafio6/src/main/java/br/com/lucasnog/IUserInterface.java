@@ -6,10 +6,10 @@ import java.util.List;
 
 public interface IUserInterface {
 
-    public void filtrarPorCategoria(List<Dado> dados);
-    public void somaPorCategoria(Integer soma);
-    public void encontrarValorMaximoLista(Dado valorMaximo);
-    public void ordenarPorData(List<Dado> listaPorData);
-    public void ordenarPorValor(List<Dado> listaPorValor);
+    public void mostrarDadosFiltradosPorCategoria(List<Dado> dados);
+    public void mostrarSomaPorCategoria(Integer soma);
+    public void mostrarValorMaximo(Dado valorMaximo);
+    public void mostrarDadosOrdenadosPorData(List<Dado> listaPorData);
+    public void mostrarDadosOrdenadosPorValor(List<Dado> listaPorValor);
 
 }
